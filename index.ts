@@ -37,8 +37,10 @@ $(function(){
   // Open Dev Toolを押下
   $("#open-dev").click(function() {
     var webview:any = document.getElementById("webview");
+    var webviewElement:Electron.WebViewElement;
+    webviewElement = webview;
     // 開発者ツールを開く
-    webview.openDevTools();
+    webviewElement.openDevTools();
   });
 
   // New Windowを押下したとき
@@ -50,12 +52,16 @@ $(function(){
   // Undoを押下したとき
   $("#undo").click(function() {
     var webview:any = document.getElementById("webview");
-    webview.executeJavaScript("history.back()");
+    var webviewElement:Electron.WebViewElement;
+    webviewElement = webview;
+    webviewElement.executeJavaScript("history.back()");
   });
 
   // Redoを押下したとき
   $("#redo").click(function() {
     var webview:any = document.getElementById("webview");
-    webview.executeJavaScript("history.forward()");
+    var webviewElement:Electron.WebViewElement;
+    webviewElement = webview;
+    webviewElement.executeJavaScript("history.forward()");
   });
 });
