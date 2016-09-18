@@ -2,10 +2,26 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Sample</title>
+  <title>SubBrowser</title>
+  <meta name="description" content="">
+  <meta name="keywords" content=""/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="vender.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</script>
 </head>
 <body>
-  <p><a href="#" onclick="window.open('index.html')">新しいウィンドウ開く</a></p>
-  <p><a href="">サンプルページ</a></p>
+<div id="content">
+  <div id="menu-bar">
+    <input type="text" id="url" value="http://electron.atom.io/"></input>
+    <button id="load">Load</button>
+    <button id="open-dev">Open Dev Tool</button>
+    <button id="new-window">New Window</button>
+    <button id="undo">Undo</button>
+    <button id="redo">Redo</button>
+  </div>
+  <div id="webview-wrapper"></div>
+</div>
 </body>
 </html>

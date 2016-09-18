@@ -1,0 +1,24 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+}
+
+#webview-wrapper {
+    width: 99%;
+    height: 95%;
+}
+
+#webview {
+    width: 99%;
+    height: 95%;
+}
